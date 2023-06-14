@@ -4,11 +4,10 @@ import {
   redirect,
 } from "react-router-dom";
 import { useContext } from "react";
-import { Home } from "../pages/Home";
 import { Login } from "../pages/Login";
 import { AuthContext } from "../contexts/AuthContext";
-import { ProductsPage } from "../pages/ProductsPage";
-import { ProductDetailPage } from "../pages/ProductDetailPage";
+import { Products } from "../pages/Products";
+import { ProductDetail } from "../pages/ProductDetail";
 import { AboutUs } from "../pages/AboutUs";
 import { NotFound } from "../pages/NotFound";
 
@@ -22,7 +21,7 @@ export const RoutesConfig = () => {
     },
     {
       path: "produtos",
-      element: <ProductsPage />,
+      element: <Products />,
     },
       // children: [
       //   {
@@ -31,7 +30,7 @@ export const RoutesConfig = () => {
       //   },
         {
           path: "produtos/1",
-          element: <ProductDetailPage />
+          element: <ProductDetail />
         },
     //   ],
     // },
